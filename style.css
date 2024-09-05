@@ -1,12 +1,68 @@
-body{
-    text-align: center;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-h1{
-    color:blue
+.about {
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(-45deg, #3494e6, #ec6ead, #3494e6, #ec6ead);
+	background-size: 400% 400%;
+	animation: animate 7s infinite alternate;
 }
 
-p
-{
-    font-family: 'Courier New', Courier, monospace;
+.about a{
+    text-decoration: none;
+    color:chartreuse
+}
+
+.wrapper {
+	text-align: center; 
+	color: #fff;
+}
+
+.wrapper h2 {
+	font-size: 5em;
+	margin-bottom: 10px;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.wrapper p {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-family: "Montserrat", sans-serif;
+	padding: 0 25px;
+	line-height: 1.5;
+}
+
+.about-image {
+	max-width: 250px;
+	height: auto;
+	border-radius: 50%;
+	border: 15px groove #fff;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		max-width: 600px;
+	}
+}
+
+@media (min-width: 992px) {
+	.wrapper {
+		max-width: 800px;
+	}
 }
